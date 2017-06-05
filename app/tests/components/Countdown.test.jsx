@@ -12,7 +12,8 @@ describe('Countdown', () => {
   });
 
   describe('handleSetCountdown', () => {
-    it('Should set state to started and count down', (done) => { // asynchronized test by adding a "done"      var countdown = TestUtils.renderIntoDocument(<Countdown/>);
+    it('Should set state to started and count down', (done) => { // asynchronized test by adding a "done"
+    var countdown = TestUtils.renderIntoDocument(<Countdown/>);
       countdown.handleSetCountdown(10);
 
       expect(countdown.state.count).toBe(10);
